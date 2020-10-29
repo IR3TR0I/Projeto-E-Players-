@@ -64,6 +64,63 @@ body {
 #menu-bars{
     display: none;
 }
+.banner{
+    position: absolute;
+}
+.banner-container{
+    width: 100%;
+    height: 37.5em;
+    position: absolute;
+    top: 0;
+}
+.banner-content{
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end; 
+}
+.banner-text{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: absolute;
+}
+.banner-text h1{
+    font-size: 5.62em;
+}
+.banner-text p{
+    font-size: 1.87em;
+}
+.banner-text a{
+    color:#fff;
+    font-size: 1.37em;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: var(--red);
+    padding: 0.5em 1.2em;
+    border-radius: 0.75em;
+    margin-top: 2em;
+}
+.jogos{
+    width: 100%;
+    height: 7.5em;
+}
+.jogos ul{
+    width: 100%;
+    list-style-type: none;
+}
+.jogos img{
+    width: 170px;
+}
+.jogos ul a:hover img{
+    transition:0.5s;
+    transform: scale(1.5);
+}
 *{
     margin: 0;
     border: 0;

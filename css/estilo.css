@@ -6,24 +6,26 @@
     --red:  #C20000;
     --blue: #001f70;
     --Gradient: linear-gradient(180deg, #000000 0%, rgba(83, 83, 83, 0.577381) 25%, rgba(196, 196, 196, 0) 87.5%);
-
-
-    --font: 'Titilium Web', 'Sans-Serif';
+    --font: Titilium Web, Sans-Serif;
+}
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-
 body {
-    font-size: 15px;
+    font-size: 16px;
     background-color: var(--background);
     font-family: var(--font);
 }
-.img{
-    width: 100%;
+.imagem-banner{
+    width: 90%;
 }
 .topo {
-    font-size: 32px;
     width: 100%;
-    height: 5em;
+    height: 75px;
     background-color: black;
 }
 .content{
@@ -37,6 +39,8 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    font-family: var(--font);
+    text-decoration: none;
 }
 .header-top img{
     max-width: 21.18em;
@@ -51,60 +55,71 @@ body {
 .menu a{
     color: #fff;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 24px;
     text-transform: uppercase;
     padding: 0.9em 0.66em;
-    
+    font-family: var(--font);
 }
 .menu a:hover{
     background-color: var(--red);
-    text-shadow: 0 0 20px #fff;
-    text-decoration: underline;
+    text-shadow: 20 20 20px #fff;
+    text-decoration: none;
+    transition: 0.5s;
 }
 #menu-bars{
     display: none;
 }
-.banner{
-    position: absolute;
+.Banner{
+    position: relative;
 }
-.banner-container{
+.Content-banner{
     width: 100%;
     height: 37.5em;
-    position: absolute;
-    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
 }
 .banner-content{
     width: 80%;
     height: 100%;
     margin: auto;
     display: flex;
-    justify-content: flex-end; 
+    background-color:rgba(255, 235, 205, 0.384);
+    justify-content: center;
+    top: 0;
 }
-.banner-text{
-    width: 50%;
-    height: 100%;
+.texto-banner{
+    width: 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    color: #fff;
-    position: absolute;
+}    
+.texto-banner h1{
+    font-size: 50px;
+    font-family: var(--font);
+    color: white;
 }
-.banner-text h1{
-    font-size: 5.62em;
+.texto-banner p{
+    font-size: 30px;
+    font-family: var(--font);
+    color: white;
 }
-.banner-text p{
-    font-size: 1.87em;
-}
-.banner-text a{
-    color:#fff;
-    font-size: 1.37em;
-    text-decoration: none;
-    text-transform: uppercase;
+.texto-banner a{
+    color: white;
+    font-size: 30px;
+    font-family: var(--font);
     background-color: var(--red);
-    padding: 0.5em 1.2em;
-    border-radius: 0.75em;
-    margin-top: 2em;
+    padding: 10px 45px;
+    border-radius: 12px;
+    margin-top: 32px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+.texto-banner a:hover{
+    background-color: rgb(0, 0, 0);
+    color: white;
 }
 .jogos{
     width: 100%;
@@ -165,12 +180,7 @@ body {
 .content-about img {
     max-width: 31.875em;
 }
-*{
-    margin: 0;
-    border: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 /* até 1199px */
 @media screen and (max-width: 74.93em){
    
